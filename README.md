@@ -8,5 +8,6 @@ version: 2.0.3
     (285, 347)extend: JQ的继承方法
     (349, 817)jQuery.extend(): 扩展一些工具方法
     (877, 2856) Sizzle: 复杂选择器的实现
+    (2880, 3042) Callbacks: 回调对象--函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/)
     (8826) window.jQuery = window.$ = jQuery; 向匿名自执行函数外部通过window的方式提供接口
 })();
