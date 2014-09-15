@@ -4,8 +4,23 @@ version: 2.0.3
 整体框架分析
 (function(){
     0--start
-    (21, 94) 定义了一些变量和函数 jQuery = function(){}; 
-    (96, 283) 给jQuery对象添加一些方法和属性 rquickExpr: <p>aaa 或 #div; rsingleTag:<p></p> <div></div>
+    finished --- (21, 94) 定义了一些变量和函数 jQuery = function(){}; rquickExpr: <p>aaa 或 #div; rsingleTag:<p></p> <div></div>
+    (96, 283) 给jQuery对象添加一些方法和属性 
+    jQuery.fn = jQuery.prototype = {
+        jquery              : 版本,
+        constructor         : 修正指向问题 jQuery,
+        init()              : 初始化和参数管理,
+        selector            : 存储选择字符,
+        length              : this对象的长度,
+        toArray()           : 转数组,
+        get()               : 转原生集合,
+        pushStack()         : jQuery对象的入栈,
+        each()              : 遍历集合,
+        ready()             : DOM加载的接口,
+        slice()             : 集合的截取,
+        first()             : 集合的第一项
+    }
+    
     (285, 347) extend: JQ的继承方法
     (349, 817) jQuery.extend(): 扩展一些工具方法r
     (877, 2856) Sizzle: 复杂选择器的实现
