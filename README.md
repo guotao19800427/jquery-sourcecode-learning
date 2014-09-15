@@ -18,7 +18,10 @@ version: 2.0.3
     (4300, 5128) on() off() trigger() :  事件操作的相关方法
     (5140, 6057) DOM操作 : 添加 appendTo， 删除 remove，获取， 包装 wrap, DOM筛选
     (6058, 6620) css()方法 : 样式操作。为什么这么长？做兼容性，浏览器支持程度等的处理
-    (6621, )
+    (6621, 7854) 提交的数据和ajax() : ajax() load() getJSON()
+    (7855, 8584) animate() 运动的方法
+    (8585, 8792) offset() width() : 位置和尺寸的方法
+    (8804, 8821) jQuery支持模块化的模式
     (8826) window.jQuery = window.$ = jQuery; 向匿名自执行函数外部通过window的方式提供接口
     
     8829--end
