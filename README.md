@@ -14,14 +14,14 @@ version: 2.0.3
         length              : this对象的长度,
         toArray()           : 转数组,
         get()               : 转原生集合,
-        pushStack()         : jQuery对象的入栈,(http://jsfiddle.net/tonyguo/hc84ge52/)
+        pushStack()         : jQuery对象的入栈,(http://jsfiddle.net/tonyguo/hc84ge52/) 以栈的方式转换操作对象（this）
         each()              : 遍历集合,
         ready()             : DOM加载的接口,
         slice()             : 集合的截取,
         first()             : 集合的第一项,
         last()              : 集合的最后一项,
         eq()                : 集合的指定项,
-        map()               : 返回新集合,
+        map()               : 返回新集合, http://jsfiddle.net/tonyguo/hc84ge52/1/
         end()               : 返回集合的前一个状态,
         push()              : (内部使用）,
         sort()              :（内部使用）,
