@@ -14,7 +14,7 @@ version: 2.0.3
         length              : this对象的长度,
         toArray()           : 转数组,
         get()               : 转原生集合,
-        pushStack()         : jQuery对象的入栈,
+        pushStack()         : jQuery对象的入栈,(http://jsfiddle.net/tonyguo/hc84ge52/)
         each()              : 遍历集合,
         ready()             : DOM加载的接口,
         slice()             : 集合的截取,
