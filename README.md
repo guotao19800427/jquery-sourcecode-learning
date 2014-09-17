@@ -21,14 +21,33 @@ version: 2.0.3
         first()             : 集合的第一项,
         last()              : 集合的最后一项,
         eq()                : 集合的指定项,
-        map()               : 返回新集合, http://jsfiddle.net/tonyguo/hc84ge52/1/
+        map()               : 对集合的2次处理，返回新集合, http://jsfiddle.net/tonyguo/hc84ge52/1/
         end()               : 返回集合的前一个状态,
         push()              : (内部使用）,
         sort()              :（内部使用）,
         splice()            : （内部使用）
     }
     
-    (285, 347) extend: JQ的继承方法
+    (285, 347) extend: JQ的继承方法 $.extend() = $.fn.extend() (line 284) 
+                       当只写一个对象自变量的时候，实际上是在给jQuery写（扩展）插件：
+                       $.extend({
+                        aaa:function(){
+                                alert('1');
+                            },
+                        bbb:function(){
+                                alert('2');
+                            }
+                       })
+                       调用方式: $.aaa();$.bbb();
+                       $.fn.extend({
+                        aaa:function(){
+                                alert('11');
+                            },
+                        bbb:function(){
+                                alert('22');
+                            }
+                       })
+                       调用方式: $().aaa(); $().bbb();
     (349, 817) jQuery.extend(): 扩展一些工具方法r
     (877, 2856) Sizzle: 复杂选择器的实现
     (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)
