@@ -49,7 +49,7 @@ version: 2.0.3
                             }
                        })
                        调用方式: $().aaa(); $().bbb();
-                       http://jsfiddle.net/tonyguo/hc84ge52/4/
+                       http://jsfiddle.net/tonyguo/hc84ge52/5/
                        
                        
     (349, 817) jQuery.extend(): 扩展一些工具(静态)方法（这里jQuery.extend没有去等于jQuery.fn.extend）
