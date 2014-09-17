@@ -6,7 +6,7 @@ version: 2.0.3
     0--start
     finished --- (21, 94) 定义了一些变量和函数 jQuery = function(){}; rquickExpr: <p>aaa 或 #div; rsingleTag:<p></p> <div></div>
     
-    (96, 283) 给jQuery对象添加一些方法和属性 
+    finished --- (96, 283) 给jQuery对象添加一些方法和属性 
     jQuery.fn = jQuery.prototype = {
         jquery              : 版本,
         constructor         : 修正指向问题 jQuery,
@@ -29,7 +29,7 @@ version: 2.0.3
         splice()            : （内部使用）
     }
     
-    (285, 347) extend: JQ的继承方法 $.extend() = $.fn.extend() (line 284) 
+    finished --- (285, 347) extend: JQ的继承方法 $.extend() = $.fn.extend() (line 284) 
                        当只写一个对象自变量的时候，实际上是在给jQuery写（扩展）插件：
                        $.extend({
                         aaa:function(){
@@ -49,7 +49,8 @@ version: 2.0.3
                             }
                        })
                        调用方式: $().aaa(); $().bbb();
-                       http://jsfiddle.net/tonyguo/hc84ge52/5/
+                       http://jsfiddle.net/tonyguo/hc84ge52/6/
+                       所以jQuery中的继承用的是copy继承，我们熟悉的还有原型继承（利用原型prototype），类式集成（new 构造函数）
                        
                        
     (349, 817) jQuery.extend(): 扩展一些工具(静态)方法（这里jQuery.extend没有去等于jQuery.fn.extend）
