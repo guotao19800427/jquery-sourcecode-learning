@@ -54,6 +54,11 @@ version: 2.0.3
                        
                        
     (349, 817) jQuery.extend(): 扩展一些工具(静态)方法（这里jQuery.extend没有去等于jQuery.fn.extend）
+        expando    : 生成唯一的jQuery字符串（内部），用来做映射关系（通过这个唯一的字符串去映射到相关的变量）,
+        noConflict : 防止冲突, 妈的jsfiddle.net测试因为网速问题，有时候会有病，我在本地做了测试，以后会把本地代码commit上来
+        isReady    : DOM是否加载完(内部)
+        
+        
     (877, 2856) Sizzle: 复杂选择器的实现
     (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)
     (3043, 3183) Deferred : 延迟对象--对异步的统一管理（http://jsfiddle.net/tonyguo/xnsuk69f/2/）原理就是回调函数
