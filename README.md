@@ -53,10 +53,13 @@ version: 2.0.3
                        所以jQuery中的继承用的是copy继承，我们熟悉的还有原型继承（利用原型prototype），类式集成（new 构造函数）
                        
                        
-    (349, 817) jQuery.extend(): 扩展一些工具(静态)方法（这里jQuery.extend没有去等于jQuery.fn.extend）
+    (349, 817) jQuery.extend(): 扩展一些工具(静态)方法
         expando    : 生成唯一的jQuery字符串（内部），用来做映射关系（通过这个唯一的字符串去映射到相关的变量）,
-        noConflict : 防止冲突, 妈的jsfiddle.net测试因为网速问题，有时候会有病，我在本地做了测试，以后会把本地代码commit上来
-        isReady    : DOM是否加载完(内部)
+        noConflict() : 防止冲突, 妈的jsfiddle.net测试因为网速问题，有时候会有病，我在本地做了测试，以后会把本地代码commit上来
+        isReady    : DOM是否加载完(内部) DOMContentLoaded（内部）
+        readyWait  : 等待多少文件的计数器(内部)
+        holdReady()  : hold（不让dom ready）住DOM的ready
+        ready()      : 准备DOM触发
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
