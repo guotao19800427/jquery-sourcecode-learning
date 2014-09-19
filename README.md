@@ -60,7 +60,10 @@ version: 2.0.3
         readyWait  : 等待多少文件的计数器(内部)
         holdReady()  : hold（不让dom ready）住DOM的ready
         ready()      : 准备DOM触发
-        
+        isFunction()   : 是否为函数 http://jsfiddle.net/y90n8zcy/
+        isArray()      : 判断是否为数组   
+        isWindow()     : 判断是否是window对象
+        isNumeric()      : 判断是否是数字 为什么不用typeof(number)? 因为typeof NaN 也返回 number
         
     (877, 2856) Sizzle: 复杂选择器的实现
     (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)
