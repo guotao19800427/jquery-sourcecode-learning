@@ -63,7 +63,15 @@ version: 2.0.3
         isFunction()   : 是否为函数 http://jsfiddle.net/y90n8zcy/
         isArray()      : 判断是否为数组   
         isWindow()     : 判断是否是window对象
-        isNumeric()      : 判断是否是数字 为什么不用typeof(number)? 因为typeof NaN 也返回 number
+        isNumeric()      : 判断是否是数字 为什么不用typeof(number)? 因为typeof NaN 也返回 number,
+        type()         : 判断数据类型,
+        isPlainObject()  : 判断是否为对象自变量,
+        isEmptyObject() : 判断是否为空的对象,
+        error()        : 抛出异常,
+        parseHTML()    : 解析节点,
+        parseJSON()    : 解析JSON,
+        paeseXML()     : 解析XML,
+        
         
     (877, 2856) Sizzle: 复杂选择器的实现
     (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)
