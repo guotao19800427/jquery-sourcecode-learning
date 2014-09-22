@@ -29,7 +29,7 @@ version: 2.0.3
         splice()            : （内部使用）
     }
     
-    finished --- (285, 347) extend: JQ的继承方法 $.extend() = $.fn.extend() (line 284) 
+    finished --- (285, 347) extend: JQ的继承(实例)方法 $.extend() = $.fn.extend() (line 284) 
                        当只写一个对象自变量的时候，实际上是在给jQuery写（扩展）插件：
                        $.extend({
                         aaa:function(){
@@ -65,12 +65,13 @@ version: 2.0.3
         isWindow()     : 判断是否是window对象
         isNumeric()      : 判断是否是数字 为什么不用typeof(number)? 因为typeof NaN 也返回 number,
         type()         : 判断数据类型,
-        isPlainObject()  : 判断是否为对象自变量,
+        isPlainObject()  : 判断是否为对象自变量, (http://jsfiddle.net/y90n8zcy/2/)(http://jsfiddle.net/y90n8zcy/7/)
         isEmptyObject() : 判断是否为空的对象,
         error()        : 抛出异常,
         parseHTML()    : 解析节点,
-        parseJSON()    : 解析JSON,
-        paeseXML()     : 解析XML,
+        parseJSON()    : 解析JSON, (http://jsfiddle.net/y90n8zcy/9/) JSON.parse(),它的反义词是JSON.stringify()
+        paeseXML()     : 解析XML,(console.log(xmlDoc);),
+        noop()         : no operation  返回空函数  function() {} (function(){}),
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
