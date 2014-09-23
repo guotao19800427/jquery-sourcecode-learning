@@ -72,6 +72,10 @@ version: 2.0.3
         parseJSON()    : 解析JSON, (http://jsfiddle.net/y90n8zcy/9/) JSON.parse(),它的反义词是JSON.stringify()
         paeseXML()     : 解析XML,(console.log(xmlDoc);),
         noop()         : no operation  返回空函数  function() {} (function(){}),
+        globalEval()   : 全局解析JS--如果把eval存成一个变量，那JS就会把它当作window的属性来用，如果不存变量直接用eval，JS就把它当关键字来用
+        camelCase()    : 转驼峰
+        
+        
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
