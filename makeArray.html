@@ -1,0 +1,33 @@
+<doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript" src="jquery.2.0.3.js"></script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aDiv = document.getElementsByTagName('div');
+			console.log($.makeArray(aDiv));
+			var str = 'hello';
+			console.log($.makeArray(str));
+			var num = 123;
+			console.log($.makeArray(num,{length:5}));//内部使用是两个参数
+			var ud = undefined;
+			console.log($.makeArray(ud));
+			var ud1 = undefined;
+			console.log($.makeArray(ud1,{length: 10}));
+			console.log( Object('hello') );
+			var arr = [];
+			arr.push(['a','b']);
+			console.log(arr);
+			console.log(['a','b']);
+			//console.log(isArraylike)
+		}	
+		
+	</script>
+</body>
+</html>
