@@ -100,7 +100,7 @@ version: 2.0.3
         now()          : 获取当前时间,http://jsfiddle.net/tonyguo/93g9yd44/1/,
         swap()         : CSS交换（内部）,用来获取隐藏dom元素的各种属性，如 width，height，等等
         jQuery.ready.promise = function(){} : 检测DOM的异步操作（内部）,
-        function isArraylike(){}            : 判断是否是类数组（内部）
+        function isArraylike(){}            : 判断是否是类数组或者jQuery格式的JSON（内部）
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
