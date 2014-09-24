@@ -73,7 +73,9 @@ version: 2.0.3
         paeseXML()     : 解析XML,(console.log(xmlDoc);),
         noop()         : no operation  返回空函数  function() {} (function(){}),
         globalEval()   : 全局解析JS--如果把eval存成一个变量，那JS就会把它当作window的属性来用，如果不存变量直接用eval，JS就把它当关键字来用
-        camelCase()    : 转驼峰
+        camelCase()    : 转驼峰(内部)
+        nodeName()     : 判断是不是指定的节点元素(内部), http://jsfiddle.net/tonyguo/7muv3aor/
+        each()         : 遍历集合,(针对jQuery对象（数组，类数组--arguments, childNodes, getElementsByTagName等等，JSON对象等等）的循环) file:///D:/test/each.html
         
         
         
