@@ -79,7 +79,7 @@ version: 2.0.3
         trim()         : 去字符串前后空格,$.trim('  hello   '),
         makeArray()    : 把所有东西转成数组,file:///D:/test/makeArray.html,
         inArray()      : 数组版的indexOf(),
-        
+        merge()        : 合并数组，内部使用时是转换成jQuery格式的JSON：{0:xxx, 1:xxx, 2:xxx, length:3}
         
         
         
