@@ -80,6 +80,18 @@ version: 2.0.3
         makeArray()    : 把所有东西转成数组,file:///D:/test/makeArray.html,
         inArray()      : 数组版的indexOf(),
         merge()        : 合并数组，内部使用时是转换成jQuery格式的JSON：{0:xxx, 1:xxx, 2:xxx, length:3}
+                         if ( typeof l === "number" ) {
+                			for ( ; j < l; j++ ) {
+                				first[ i++ ] = second[ j ];
+                			}
+                		} else {
+                			while ( second[j] !== undefined ) {
+                				first[ i++ ] = second[ j++ ];
+                			}
+                		}
+                		if的情况  : $.merge(['a','b'],['c','d']);
+                		else的情况: $.merge(['a','b'],{0:'c','1':'d'});
+                		file:///D:/test/merge.html
         
         
         
