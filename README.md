@@ -98,7 +98,9 @@ version: 2.0.3
         proxy()        : 改变this指向,
         access()       : 多功能值操作(内部),用来帮助jquery完成像attr(),css()等这种既能set又能get，还能写JSON参数的方法
         now()          : 获取当前时间,http://jsfiddle.net/tonyguo/93g9yd44/1/,
-        swap()         : CSS交换（内部）
+        swap()         : CSS交换（内部）,用来获取隐藏dom元素的各种属性，如 width，height，等等
+        jQuery.ready.promise = function(){} : 检测DOM的异步操作（内部）,
+        function isArraylike(){}            : 判断是否是类数组（内部）
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
