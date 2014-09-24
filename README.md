@@ -96,7 +96,9 @@ version: 2.0.3
         map()          : 用第2个参数（函数）遍历处理第一个参数（数组或类数组），得到并返回处理后的新数组,
         guid           : 唯一标识符（内部）,
         proxy()        : 改变this指向,
-        
+        access()       : 多功能值操作(内部),用来帮助jquery完成像attr(),css()等这种既能set又能get，还能写JSON参数的方法
+        now()          : 获取当前时间,http://jsfiddle.net/tonyguo/93g9yd44/1/,
+        swap()         : CSS交换（内部）
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
