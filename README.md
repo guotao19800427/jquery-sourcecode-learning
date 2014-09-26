@@ -104,11 +104,15 @@ version: 2.0.3
         
         
     (877, 2856) Sizzle: 复杂选择器的实现
+    
+    
     finished --- (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)(4个参数 http://jsfiddle.net/tonyguo/xnsuk69f/5/)
+    
+    
     (3043, 3183) Deferred : 延迟对象--对异步的统一管理（http://jsfiddle.net/tonyguo/xnsuk69f/2/）原理就是回调函数
-         
-         好处：1） 能够灵活的管理异步函数 http://jsfiddle.net/tonyguo/860oo2to/
+        好处：1） 能够灵活的管理异步函数 http://jsfiddle.net/tonyguo/860oo2to/
                2） 灵活书写ajax http://jsfiddle.net/tonyguo/860oo2to/2/
+        重点：promise和Deferred的区别：Dederred通过promise.promise( deferred );这句话继承了promise，而Deferred自身拥有3个状态属性： resolve('成功')，reject（‘失败’），notify（‘进行中’）， 因而Deferred也就是可以改变状态的对象，而promise是一个不能改变状态的对象
         
     
     (3184, 3295) support  : 浏览器功能检测，不按浏览器版本，而是按照浏览器功能来检测
