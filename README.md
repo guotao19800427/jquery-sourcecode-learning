@@ -113,6 +113,11 @@ version: 2.0.3
         好处：1） 能够灵活的管理异步函数 http://jsfiddle.net/tonyguo/860oo2to/
                2） 灵活书写ajax http://jsfiddle.net/tonyguo/860oo2to/2/
         重点：promise和Deferred的区别：Dederred通过promise.promise( deferred );这句话继承了promise，而Deferred自身拥有3个状态属性： resolve('成功')，reject（‘失败’），notify（‘进行中’）， 因而Deferred也就是可以改变状态的对象，而promise是一个不能改变状态的对象 http://jsfiddle.net/tonyguo/860oo2to/5/
+        $.when()是一个$.Deferred()的辅助
+        $.when().done().then() return deferred.promise(); 也是返回$.Deferred.promise(),一个不能改变状态的对象
+        那么$.when() 和 $.Deferred.promise()的区别是什么?
+        1.$.when()可以针对多个异步操作进行统一管理，$.Deferred.promise()只能针对一个(http://jsfiddle.net/tonyguo/860oo2to/7/)
+        
         
     
     (3184, 3295) support  : 浏览器功能检测，不按浏览器版本，而是按照浏览器功能来检测
