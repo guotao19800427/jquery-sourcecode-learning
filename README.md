@@ -106,6 +106,11 @@ version: 2.0.3
     (877, 2856) Sizzle: 复杂选择器的实现
     finished --- (2880, 3042) Callbacks: 回调对象--对函数的统一管理(http://jsfiddle.net/tonyguo/xnsuk69f/1/)(4个参数 http://jsfiddle.net/tonyguo/xnsuk69f/5/)
     (3043, 3183) Deferred : 延迟对象--对异步的统一管理（http://jsfiddle.net/tonyguo/xnsuk69f/2/）原理就是回调函数
+         
+         好处：1） 能够灵活的管理异步函数 http://jsfiddle.net/tonyguo/860oo2to/
+               2） 灵活书写ajax http://jsfiddle.net/tonyguo/860oo2to/2/
+        
+    
     (3184, 3295) support  : 浏览器功能检测，不按浏览器版本，而是按照浏览器功能来检测
     (3308, 3652) data()   : 数据缓存(http://jsfiddle.net/tonyguo/xnsuk69f/3/) 不是简单的把数据挂载到元素身上
     (3653, 3797) queue()  : 队列管理（入队） dequeue  :  队列管理(出队) (http://jsfiddle.net/tonyguo/xnsuk69f/4/)
