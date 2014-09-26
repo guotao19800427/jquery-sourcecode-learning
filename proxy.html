@@ -1,0 +1,22 @@
+<doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript" src="jquery.2.0.3.js"></script>
+</head>
+<body>
+	<button>click</button>
+	<button>cancle binding</button>
+	<script type="text/javascript">
+		function show(para1, para2){
+			console.log(this);
+			console.log(para1, para2);
+		}
+		show('gt', 'qy');
+		$.proxy(show, document)(3,4);
+		$.proxy(show, document ,3,4)();
+		$.proxy(show, document ,3)(4);
+		show('gt', 'qy');
+	</script>
+</body>
+</html>

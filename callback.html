@@ -1,0 +1,28 @@
+<doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript" src="jquery.2.0.3.js"></script>
+</head>
+<body>
+	
+	<script type="text/javascript">
+	    var flag = true;
+		function aaa(){
+			alert(1);
+			//cb.fire();
+			if(flag){
+				cb.fire();
+				flag = false;
+			}
+		}
+		function bbb(){
+			alert(2);
+		}
+		
+		var cb = $.Callbacks();
+		cb.add([aaa,bbb]);
+		cb.fire();
+	</script>
+</body>
+</html>

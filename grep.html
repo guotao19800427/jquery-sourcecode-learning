@@ -1,0 +1,29 @@
+<doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript" src="jquery.2.0.3.js"></script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<script type="text/javascript">
+		var arr = [1,2,3,4];
+		var arr2 = $.grep(arr, function(element, index){
+			return element > 2;
+		}, true)
+		var arr1 = $.grep(arr, function(element, index){
+			return element > 2;
+		}, false)
+		console.log(arr2);
+		console.log(arr1);
+		//json格式是不能用的哦，要记得看源码
+		var json = {0:'a',1:'b'}
+		json = $.grep(json, function(element, index){
+			return element === 'a'
+		})
+		console.log(json);
+	</script>
+</body>
+</html>

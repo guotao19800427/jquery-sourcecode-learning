@@ -1,0 +1,20 @@
+<doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript" src="jquery.2.0.3.js"></script>
+</head>
+<body>
+	<button>click</button>
+	<button>cancle binding</button>
+	<script type="text/javascript">
+		function show(){
+			console.log(this);
+		}
+		$('button:eq(0)').on('click',$.proxy(show, window));
+		$('button:eq(1)').on('click',function(){
+			$('button:eq(0)').off('click');
+		});
+	</script>
+</body>
+</html>
