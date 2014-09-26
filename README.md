@@ -121,6 +121,10 @@ version: 2.0.3
         
     
     (3184, 3295) support  : 浏览器功能检测，不按浏览器版本，而是按照浏览器功能来检测--解决内部源码的兼容性问题
+                            http://jsfiddle.net/tonyguo/860oo2to/8/
+                            
+                            
+                            
     (3308, 3652) data()   : 数据缓存(http://jsfiddle.net/tonyguo/xnsuk69f/3/) 不是简单的把数据挂载到元素身上
     (3653, 3797) queue()  : 队列管理（入队） dequeue  :  队列管理(出队) (http://jsfiddle.net/tonyguo/xnsuk69f/4/)
     (3803, 4299) attr()方法 prop()方法 val()方法 addClass()方法等等 -- 对元素属性的操作
